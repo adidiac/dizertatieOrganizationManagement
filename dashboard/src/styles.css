@@ -1,0 +1,118 @@
+/* ---------- Layout ---------- */
+html, body, #root {
+  margin: 0; padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.designer-container {
+  display: flex;
+  height: 100%;
+}
+
+.canvas {
+  flex: 1;
+  border-right: 1px solid #ddd;
+  position: relative;
+}
+
+/* Sidebar */
+.controls-card {
+  width: 300px;
+  padding: 16px;
+  background: #fafafa;
+  overflow-y: auto;
+}
+
+.controls-card h2 {
+  margin-top: 0;
+}
+
+/* Form rows for path selects */
+.form-row {
+  display: flex;
+  gap: 8px;
+}
+
+.form-group {
+  flex: 1;
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.form-group select,
+.form-group input {
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  margin-top: 8px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.btn-primary {
+  background: #007bff;
+}
+
+.btn-danger {
+  background: #dc3545;
+}
+
+/* Divider */
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 16px 0;
+}
+
+/* Compromised section */
+.compromised-section {
+  margin-top: 16px;
+}
+
+.compromised-section ul {
+  padding-left: 16px;
+}
+
+/* Loader */
+.loader-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255,255,255,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  border: 4px solid #eee;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  width: 36px; height: 36px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+.token {
+  font-size: 1.2rem;
+  line-height: 1;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}

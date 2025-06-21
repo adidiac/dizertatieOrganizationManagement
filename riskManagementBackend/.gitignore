@@ -1,0 +1,102 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+/extraction/__pycache__/
+/models/myenv/
+extraction/__pycache__/
+models/myenv/
+extraction/__pycache__
+models/myenv
+*.py[cod]
+*$py.class
+
+# Ignore large model files
+models/psychometric_model/model.safetensors
+models/results/checkpoint-3/model.safetensors
+models/results/checkpoint-3/optimizer.pt
+# Ignore large model files
+# Ignore large model files
+models/psychometric_model/model.safetensors
+models/results/checkpoint-3/model.safetensors
+models/results/checkpoint-3/optimizer.pt
+
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+env.bak/
+venv.bak/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+
+# Flask & general development
+instance/
+.webassets-cache/
+
+# Pytest
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# VS Code settings
+.vscode/
+
+# IntelliJ/IDEA settings
+.idea/
+
+# Sublime Text project files
+*.sublime-project
+*.sublime-workspace
+
+# Environment variables (commonly used for secrets)
+.env
+.env.*
+
+# Railway CLI configuration (if you do not wish to track them)
+railway.json

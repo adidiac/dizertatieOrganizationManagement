@@ -1,0 +1,4 @@
+models/psychometric_model/model.safetensors filter=lfs diff=lfs merge=lfs -text
+models/results/checkpoint-3/optimizer.pt filter=lfs diff=lfs merge=lfs -text
+models/**/*.safetensors filter=lfs diff=lfs merge=lfs -text
+models/results/** filter=lfs diff=lfs merge=lfs -text
